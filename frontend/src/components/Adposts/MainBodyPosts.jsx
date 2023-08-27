@@ -18,15 +18,16 @@ export default function MainBodyPosts(props) {
 			if (props.category === "All") {
 				if (props.filter.sort === "clear") {
 					response = await fetch(
-						"http://localhost:4000/ad-api/getAds/sort/clear"
+						"https://tame-blue-deer-tie.cyclic.cloud/ad-api/getAds/sort/clear", { mode: 'cors' }
 					);
 				} else if (props.filter.sort === "inc") {
 					response = await fetch(
-						"http://localhost:4000/ad-api/getAds/sort/inc"
+						"https://tame-blue-deer-tie.cyclic.cloud/ad-api/getAds/sort/inc", { mode: 'cors' }
 					);
 				} else {
 					response = await fetch(
-						"http://localhost:4000/ad-api/getAds/sort/dec"
+						"https://tame-blue-deer-tie.cyclic.cloud/ad-api/getAds/sort/dec"
+					, { mode: 'cors' }
 					);
 				}
 				const allPosts = await response.json();
@@ -34,21 +35,21 @@ export default function MainBodyPosts(props) {
 			} else {
 				if (props.filter.sort === "clear") {
 					response = await fetch(
-						"http://localhost:4000/ad-api/getAds/category/" +
+						"https://tame-blue-deer-tie.cyclic.cloud/ad-api/getAds/category/" +
 							props.category +
-							"/sort/clear"
+							"/sort/clear", { mode: 'cors' }
 					);
 				} else if (props.filter.sort === "inc") {
 					response = await fetch(
-						"http://localhost:4000/ad-api/getAds/category/" +
+						"https://tame-blue-deer-tie.cyclic.cloud/ad-api/getAds/category/" +
 							props.category +
-							"/sort/inc"
+							"/sort/inc", { mode: 'cors' }
 					);
 				} else {
 					response = await fetch(
-						"http://localhost:4000/ad-api/getAds/category/" +
+						"https://tame-blue-deer-tie.cyclic.cloud/ad-api/getAds/category/" +
 							props.category +
-							"/sort/dec"
+							"/sort/dec", { mode: 'cors' }
 					);
 				}
 				const categoricalPosts = await response.json();

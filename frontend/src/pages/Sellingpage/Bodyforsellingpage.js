@@ -50,13 +50,13 @@ const Bodyforsellingpage = () => {
             data.append("file", pro_image);
             values.photo = filename;
             try {
-                await axios.post('http://localhost:4000/ad-api/upload', data);
+                await axios.post('https://tame-blue-deer-tie.cyclic.cloud/ad-api/upload', data);
             } catch (err) {
                 console.log("error in uploading file");
             }
         }
         try {
-            const res = await axios.post('http://localhost:4000/ad-api/postAd', values);
+            const res = await axios.post('https://tame-blue-deer-tie.cyclic.cloud/ad-api/postAd', values);
         } catch (err) {
             console.log("error uploading text inputs");
         };

@@ -51,18 +51,11 @@ router.get("/getAds/category/:category/sort/:sort", (req, res) => {
 
 // get all ads from db
 router.get("/getAds/sort/:sort", (req, res) => {
-	// const { qN } = req.query;
-	// console.log(qN);
 	if (req.params.sort === "clear") {
 		Posts.find({}, (err, allAds) => {
 			if (err) {
 				console.log(err);
 			} else {
-				// console.log(allAds);
-				// const search = (allAds) => {
-				// 	return allAds.filter(ad => ad.pro_name.toLowerCase().includes(qN))
-				// }
-				// res.send(search(allAds));
 				res.send(allAds);
 			}
 		});

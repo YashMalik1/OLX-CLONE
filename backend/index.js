@@ -13,7 +13,7 @@ const app = express();
 
 // set up cors
 app.use(cors({
-    origin: "http://localhost:3000",            // take request from here which is different that the url from where app is listening to(i.e 4000). By default, get put post delete requests are taken from the url where the app is listening to
+    origin: "https://olxclone-for-iitg.web.app",            // take request from here which is different that the url from where app is listening to(i.e 4000). By default, get put post delete requests are taken from the url where the app is listening to
     methods: ['GET', 'POST', 'DELETE', 'PATCH', 'PUT'],
     credentials: true           // for taking in cookies also
 }))
@@ -43,6 +43,7 @@ app.use(bodyParser.json());             // it's gonna parse the json data of inc
 // fires for every request
 app.use((req, res, next) => {
     console.log(req.url, req.method);
+    res.set('Access-Control-Allow-Origin', '*');
     next();
 })
 

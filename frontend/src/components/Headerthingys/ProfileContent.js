@@ -6,7 +6,7 @@ import { useContext, useState } from 'react';
 
 function ProfileData(graphData, setUserId) {
 	const postUser = async () => {
-		const response = await fetch('http://localhost:4000/auth/postUser', {
+		const response = await fetch('https://tame-blue-deer-tie.cyclic.cloud/auth/postUser', {
 			method: "POST",
 			headers: {
 				'Content-Type': 'application/json'
@@ -17,8 +17,8 @@ function ProfileData(graphData, setUserId) {
 				email: graphData.userPrincipalName,
 				microsoftId: graphData.id,
 				program: graphData.jobTitle
-			})
-		});
+			}),
+		}, {mode: 'cors'});
 		
 		// const data = await response.json();
 		// console.log(data);

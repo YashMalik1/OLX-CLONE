@@ -11,13 +11,13 @@ export default function ProfilePage(props) {
     const {userId} = useContext(UserIdContext);     // id of person logged into account.
 
     const { isLoading: isLoadingPosts, data: postsData } = useQuery('hisPosts', async () => {
-        const response = await fetch('http://localhost:4000/ad-api/getAds/sellerId/' + userId);       // fetching posts on basis of his userId.
+        const response = await fetch('https://tame-blue-deer-tie.cyclic.cloud/ad-api/getAds/sellerId/' + userId, {mode: 'cors'});       // fetching posts on basis of his userId.
         return response.json();
     });
 
     const { isLoading: isLoadingData, data: userData } = useQuery('hisData', async () => {
         // using same api-endpoint as seller info to fetch user info(basically requires the same set of info).
-        const response = await fetch('http://localhost:4000/auth/getSeller/sellerId/' + userId);
+        const response = await fetch('https://tame-blue-deer-tie.cyclic.cloud/auth/getSeller/sellerId/' + userId, {mode: 'cors'});
         return response.json();
     });
 

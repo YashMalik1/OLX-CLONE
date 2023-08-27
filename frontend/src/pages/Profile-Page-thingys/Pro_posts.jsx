@@ -51,9 +51,9 @@ export default function Pro_posts(props) {
     const deleteHandler = () => {
         const postId = props.post._id
         const deletePost = async () => {
-            const response = await fetch('http://localhost:4000/ad-api/deleteAd/postId/' + postId, {
+            const response = await fetch('https://tame-blue-deer-tie.cyclic.cloud/ad-api/deleteAd/postId/' + postId, {
                 method: "DELETE",
-            });
+            }, {mode: 'cors'});
             const deletedPost = await response.json();
             console.log("Deleted post is : ", deletedPost);
         };

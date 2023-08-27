@@ -92,12 +92,12 @@ export default function AdDescPage() {
 
   useEffect(() => {
     const fetchPost = async () => {
-      const response1 = await fetch('http://localhost:4000/ad-api/getAds/id/' + AdId);
+      const response1 = await fetch('https://tame-blue-deer-tie.cyclic.cloud/ad-api/getAds/id/' + AdId, { mode: 'cors' });
       const thatPost = await response1.json();
       setPost(thatPost);
 
       const SellerId = thatPost.sellerId;
-      const response2 = await fetch('http://localhost:4000/auth/getSeller/sellerId/' + SellerId);
+      const response2 = await fetch('https://tame-blue-deer-tie.cyclic.cloud/auth/getSeller/sellerId/' + SellerId, { mode: 'cors' });
       const thatSeller = await response2.json();
       setSeller(thatSeller);
 
@@ -162,7 +162,7 @@ export default function AdDescPage() {
 
           <div className={classes.pro_image}>
             {/* {post && post.pro_image} */}
-            {post && <img src={'http://localhost:4000/images/' + post.photo} alt="post" />}
+            {post && <img src={'https://tame-blue-deer-tie.cyclic.cloud/images/' + post.photo} alt="post" />}
 
           </div>
           <hr />
@@ -201,10 +201,11 @@ export default function AdDescPage() {
           <div className={classes.aboutSeller}>
             <div className={classes.temporary}>
               Seller Info
+              <hr />
             </div>
             <p>
               {seller && seller.Name} <br />
-              <i class="fa fa-envelope"></i> &nbsp;
+              <i className="fa fa-envelope"></i> &nbsp;
               {seller && seller.email} <br />
               Department : {dept} <br />
               Year Enrolled : 20{enrolled_year} <br />

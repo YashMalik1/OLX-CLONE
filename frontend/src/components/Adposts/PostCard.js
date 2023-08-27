@@ -50,7 +50,7 @@ export default function PostCard(props) {
   let date=takeoutdate(props.post.dateOfBuying);
   // let postdate=takeoutdate();
 
-  const PF = 'http://localhost:4000/images/';
+  const PF = 'https://tame-blue-deer-tie.cyclic.cloud/images/';
 
    /*Fuction to add commas in the price */
   

@@ -1,8 +1,8 @@
 export const msalConfig = {
     auth: {
-      clientId: process.env.REACT_APP_CLIENTID,
+      clientId: "1202a425-bb3c-4141-ace6-f1b7b67b5730",
       authority: "https://login.microsoftonline.com/common", // This is a URL (e.g. https://login.microsoftonline.com/{your tenant ID})
-      redirectUri: "http://localhost:3000",
+      redirectUri: "https://olxclone-for-iitg.web.app/",
     },
     cache: {
       cacheLocation: "sessionStorage", // This configures where your cache will be stored
