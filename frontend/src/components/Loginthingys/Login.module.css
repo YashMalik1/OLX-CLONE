@@ -1,0 +1,35 @@
+.login{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    height: 50px;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 130px;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.login strong span {
+    position: absolute;
+    top: 8px;
+    left: 23px;
+    font-size: 1.6rem;
+}
+
+.login img{
+    position: absolute;
+    height: 50%;
+    right:3%;
+    top: 12px;
+    border-radius: 50%;
+}
+
+.login:hover{
+    background-color: rgb(136, 255, 255);
+    
+}
+.login u:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,155 @@
+.main {
+    background-color: rgba(242, 242, 242, 0.499);
+    border: 1px solid gray;
+    margin-top: 80px;
+    justify-content: center;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 12px;
+    padding-bottom: 20px;
+    z-index: 1;
+}
+
+.main>* {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.title {
+    font-size: 5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Cambria;
+}
+
+.wholeForm>* {
+    font-size: 1.3rem;
+    padding: 2px;
+}
+
+input {
+    border-radius: 7px;
+    border: 1px solid gray;
+    height: 20px;
+}
+
+.form>* {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+textarea {
+    resize: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    width: 500px;
+    margin-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    height: 300px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    font-size: 1.5rem;
+    width: 120px;
+    height: 38px;
+    border-radius: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-family: Cambria;
+    /* font-weight: 550; */
+}
+
+.buttons :hover {
+    background-color: rgb(136, 255, 255);
+}
+
+.hostel select {
+    font-size: 1.1rem;
+    border-radius: 8px;
+}
+
+.hostel option {
+    font-size: 1.1rem;
+}
+
+.upload input {
+    font-size: 1.1rem;
+    width: 190px;
+    height: 24px;
+}
+
+.date input {
+    font-size: 1.1rem;
+    width: 200px;
+    height: 24px;
+}
+
+.pro_name input {
+    font-size: 1.1rem;
+    width: 190px;
+}
+
+.category input {
+    font-size: 1.1rem;
+    width: 220px;
+}
+
+.price input {
+    font-size: 1.1rem;
+    width: 105px;
+}
+
+.nego input {
+    transform: scale(1.6);
+}
+
+.nego label {
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 1077px) {
+    .main {
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
+@media only screen and (max-width: 779px) {
+    .main {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 856px) {
+    .title {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 692px) {
+    textarea {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    textarea {
+        width: 290px;
+    }
+    .main {
+        width: 90%;
+        margin-left: 5%;
+    }
+}

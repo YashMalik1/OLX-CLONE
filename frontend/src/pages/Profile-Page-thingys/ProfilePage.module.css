@@ -1,0 +1,57 @@
+.headbar {
+    height: 100px;
+    background-color: rgb(32, 88, 243);
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headbar img {
+    height: 84px;
+    border: 2px solid black;
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.profilePart{
+    flex:25%;
+    margin: 3%;
+    background-color: rgb(32, 88, 243);
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.AdPart{
+    flex:55%;
+    margin: 3%;
+    margin-left: 0;
+    background-color: crimson;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.profileHead,.AdHead{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+.body{
+    margin: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.posts{
+    flex:50%;
+    margin:25px;
+    min-height: 340px;
+    min-width: 340px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid rgba(208, 208, 208, 0.434);
+    box-shadow: 4px 4px rgb(195, 195, 195);
+}
+
+
+.desc{
+    flex:50%;
+    margin: 25px;
+}
+
+.descHead{
+    font-size: 2rem;
+    font-weight: 650;
+    margin-bottom: 10px;
+}
+
+.description{
+    font-size: 1.2rem;
+}
+
+.description {
+    overflow-y: hidden;
+    text-overflow:ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+} 
+
+.desc button {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.desc button:hover {
+    background-color: red;
+    color: white;
+}
+

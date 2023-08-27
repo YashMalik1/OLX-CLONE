@@ -1,0 +1,69 @@
+.FooterComp{
+    display: Flex;
+    justify-content: space-around;
+    background-color: rgb(0, 18, 66);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    max-height: auto;
+    min-height: 250px;
+} 
+
+.left,.right,.middle{
+    /* border: 1px red solid; */
+    margin-top: 0px;
+    width: 25%;
+    margin-left: 25px;
+    margin-right:25px;
+    text-align: center;
+}
+
+.Head{
+    font-family: cursive;
+    font-size: 35px;
+    font-weight: 550;
+}
+
+.body{
+    text-align: center;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.right i{
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.body a {
+    color: white;
+}
+
+.body a:hover{
+    text-decoration: underline;
+    color: wheat;
+}
+
+
+@media only screen and (max-width: 610px) {
+.FooterComp{
+    flex-direction: column;
+} 
+
+.FooterComp > *{
+    width: 90%;
+}
+
+.Head{
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.body{
+    margin-bottom: 0px;
+    margin-top: 10px; 
+}
+.right{
+    margin-bottom: 20px;
+}
+}

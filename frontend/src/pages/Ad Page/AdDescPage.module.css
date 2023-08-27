@@ -1,0 +1,200 @@
+.headbar {
+    height: 96px;
+    background-color: rgb(32, 88, 243);
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headbar img {
+    height: 84px;
+    border: 2px solid black;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+}
+
+/*left column*/
+
+.leftColumn {
+    width: 52%;
+    background-color: rgba(168, 169, 176, 0.108);
+    margin-right: 1.5%;
+    padding: 0;
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding-bottom: 3%;
+}
+
+
+.pro_image{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    
+}
+.leftColumn img {
+    object-fit: cover;
+    max-width: 100%;
+    height: 31rem;
+    border-radius: 6px;
+    
+    
+}
+
+.pro_name {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5%;
+    font-weight: 480;
+}
+
+.hr {
+    width: 95%;
+}
+
+.descriptionHead {
+    font-size: 1.8rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 650;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.description {
+    font-size: 1.2rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 1%;
+}
+
+.dateOfBuying {
+    font-size: 1.2rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+.Add {
+    font-size: 1.2rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+/*right column*/
+
+.rightColumn {
+    width: 22%;
+    margin-left: 0;
+    padding: 0;
+}
+
+.aboutAd {
+    background-color: rgba(168, 169, 176, 0.108);
+    border-radius: 6px;
+    padding: 5%;
+    border: 1px solid gray;
+}
+
+.rightColumn>* {
+    font-size: 1.2rem;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.price {
+    font-weight: 650;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nego {
+    font-weight: 650;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: green;
+}
+
+.notNego {
+    font-size: 1.8rem;
+    margin-top: 0; 
+    margin-bottom: 0;
+    color: red;
+}
+
+.hostel {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.hostel img {
+    height: 1.8rem;
+}
+
+.postDate {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(55, 55, 55);
+}
+
+/*-----about seller-----*/
+
+.aboutSeller {
+    background-color: rgba(168, 169, 176, 0.108);
+    border-radius: 6px;
+    padding: 5%;
+    border: 1px solid gray;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.temporary {
+    font-size: 1.8rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 650;
+    margin-top: 0;
+    margin-bottom: 1;
+}
+
+
+
+
+
+/*trying something with media*/
+@media only screen and (max-width: 1024px) {
+    .body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .leftColumn{
+        width: 85%;
+        justify-self: center;
+    }
+    .rightColumn{
+        width: 85%;
+        justify-self: center;
+        margin-top: 2%;
+        margin-right: 1%;
+    }
+    .leftColumn img {
+        height: auto;
+    }
+}
